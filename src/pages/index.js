@@ -14,7 +14,7 @@ const SectionBlock = styled.div`
 
 const IndexPage = () => (
 	<Layout>
-		<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+		<SEO title="Home" keywords={[`Web Developer`, `Front End`, `React`, `JavaScript`]} />
 
 		<ThingsILike />
 
