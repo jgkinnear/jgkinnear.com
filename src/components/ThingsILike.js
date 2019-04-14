@@ -47,12 +47,13 @@ function shuffle(array) {
 	return array;
 }
 
-const Styled__ThingsILike = styled.div`
+const StyledThingsILike = styled.div`
 	display: flex;
 	justify-content: space-around;
+	overflow-x: hidden;
 `;
 
-const Styled__Heading = styled(Heading)`
+const StyledHeading = styled(Heading)`
 	text-transform: uppercase;
 	opacity: 0.4;
 	flex: 0 0 auto;
@@ -61,16 +62,16 @@ const Styled__Heading = styled(Heading)`
 
 const ThingsILike = () => {
 	return (
-		<Styled__ThingsILike>
+		<StyledThingsILike>
 			{shuffle(THINGS).map((thing, index) => {
 				return (
 					<>
-						<Styled__Heading level={3}>&nbsp;{thing}&nbsp;</Styled__Heading>
-						<Styled__Heading level={3}> | </Styled__Heading>
+						<StyledHeading level={3}>&nbsp;{thing}&nbsp;</StyledHeading>
+						<StyledHeading level={3}> | </StyledHeading>
 					</>
 				);
 			})}
-		</Styled__ThingsILike>
+		</StyledThingsILike>
 	);
 };
 

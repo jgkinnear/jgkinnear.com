@@ -6,7 +6,6 @@ import 'normalize.css';
 import Heading from '../elements/Heading';
 import styled, { createGlobalStyle } from 'styled-components';
 import { typography, spacing } from '../theme';
-import Me from './Me';
 import ThingsILike from './ThingsILike';
 
 const GlobalStyle = createGlobalStyle`
@@ -15,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Nunito Sans', 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 300;
-  }
+}
 
 	p {
 		margin-top: 0;
@@ -62,18 +61,18 @@ Layout.Panel = styled.div`
 	padding-right: ${spacing(5)};
 `;
 
-const Styled__LayoutSection = styled(Layout.Panel)`
+const StyledLayoutSection = styled(Layout.Panel)`
 	margin-bottom: 100px;
 `;
 
 Layout.Section = ({ children, title }) => {
 	return (
-		<Styled__LayoutSection>
+		<StyledLayoutSection>
 			<Heading pop level={3}>
 				{title}
 			</Heading>
 			{children}
-		</Styled__LayoutSection>
+		</StyledLayoutSection>
 	);
 };
 

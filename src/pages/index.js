@@ -1,10 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
 import Me from '../components/Me';
 import styled from 'styled-components';
-import { spacing, typography } from '../theme';
+import { spacing } from '../theme';
 import Heading from '../elements/Heading';
 
 const SectionBlock = styled.div`
