@@ -6,7 +6,6 @@ import Me from '../components/Me';
 import styled from 'styled-components';
 import { spacing, typography } from '../theme';
 import Heading from '../elements/Heading';
-import ThingsILike from '../components/ThingsILike';
 
 const SectionBlock = styled.div`
 	margin-bottom: ${spacing(5)};
@@ -15,13 +14,9 @@ const SectionBlock = styled.div`
 const IndexPage = () => (
 	<Layout>
 		<SEO title="Home" keywords={[`Web Developer`, `Front End`, `React`, `JavaScript`]} />
-
-		<ThingsILike />
-
 		<Layout.Panel>
 			<Me />
 		</Layout.Panel>
-
 		<Layout.Panel>
 			<p>
 				I’m a Software Developer who loves what I do. I build quality software, and help teams work productively

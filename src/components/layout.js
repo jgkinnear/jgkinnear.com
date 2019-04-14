@@ -6,6 +6,8 @@ import 'normalize.css';
 import Heading from '../elements/Heading';
 import styled, { createGlobalStyle } from 'styled-components';
 import { typography, spacing } from '../theme';
+import Me from './Me';
+import ThingsILike from './ThingsILike';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -43,6 +45,8 @@ const Layout = ({ children }) => (
 				{/* <Header siteTitle={data.site.siteMetadata.title} /> */}
 				<div>
 					<GlobalStyle />
+					<ThingsILike />
+
 					<main>{children}</main>
 					{/* <footer>© {new Date().getFullYear()}, Built with Love</footer> */}
 				</div>
