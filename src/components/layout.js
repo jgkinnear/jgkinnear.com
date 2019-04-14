@@ -58,6 +58,8 @@ const Layout = ({ children }) => (
 Layout.Panel = styled.div`
 	max-width: 700px;
 	margin: ${spacing(5)} auto;
+	padding-left: ${spacing(5)};
+	padding-right: ${spacing(5)};
 `;
 
 const Styled__LayoutSection = styled(Layout.Panel)`
