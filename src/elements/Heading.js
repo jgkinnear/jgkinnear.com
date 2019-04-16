@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { fontSize, spacing, typography } from '../theme';
+
 const H1 = styled.h1`
 	font-size: ${fontSize(3)};
 	margin-top: ${spacing(3)};

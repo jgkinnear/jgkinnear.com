@@ -20,13 +20,17 @@ const StyledMe = styled.div`
 // 	transition: all 0.3s ease;
 // `;
 
+const LastName = styled.span`
+	color: ${typography('popColor')};
+	font-size: inherit;
+`;
+
 const Me = () => {
 	return (
 		<StyledMe>
 			{/* <StyledProfileImage src="https://media.licdn.com/dms/image/C5103AQG2FBBl5DLn6g/profile-displayphoto-shrink_100_100/0?e=1560384000&v=beta&t=dWcgyVQCeUukp1WkbdcAjdARwSAZRyISgoJU-eBZbSY" /> */}
-
 			<Heading>
-				Jason <span style={{ color: typography('popColor'), fontSize: 'inherit' }}>Kinnear</span>
+				Jason <LastName>Kinnear</LastName>
 			</Heading>
 			<Heading level={3}>Software Developer</Heading>
 		</StyledMe>

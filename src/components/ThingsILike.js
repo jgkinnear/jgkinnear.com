@@ -63,12 +63,12 @@ const StyledHeading = styled(Heading)`
 const ThingsILike = () => {
 	return (
 		<StyledThingsILike>
-			{shuffle(THINGS).map((thing, index) => {
+			{shuffle(THINGS).map((thing) => {
 				return (
-					<>
+					<React.Fragment key={thing}>
 						<StyledHeading level={3}>&nbsp;{thing}&nbsp;</StyledHeading>
 						<StyledHeading level={3}> | </StyledHeading>
-					</>
+					</React.Fragment>
 				);
 			})}
 		</StyledThingsILike>
